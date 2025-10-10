@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 31120cc1e480c1c42a318c5b4d025b97
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 23800000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 255529
+  packageName: Dice and Tomb Board Game - Free
+  packageVersion: 1.0
+  assetPath: Assets/Sci-Fi Tomb/Sci-FI Tomb Scene/Sci-FI Tomb Scene/NavMesh.asset
+  uploadId: 599463

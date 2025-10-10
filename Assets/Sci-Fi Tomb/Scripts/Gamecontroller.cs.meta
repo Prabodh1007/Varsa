@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: ecaa41651019e1a4590ff351481eeea1
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 255529
+  packageName: Dice and Tomb Board Game - Free
+  packageVersion: 1.0
+  assetPath: Assets/Sci-Fi Tomb/Scripts/Gamecontroller.cs
+  uploadId: 599463

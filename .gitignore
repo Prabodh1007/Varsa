@@ -1,0 +1,25 @@
+# Visual Studio temporary files
+.vs/
+*.user
+*.suo
+*.tmp
+*.userprefs
+
+# Unity temp and library
+[Ll]ibrary/
+[Tt]emp/
+[Oo]bj/
+[Bb]uild/
+[Bb]uilds/
+UserSettings/
+
+# Unity cache and logs
+MemoryCaptures/
+*.log
+
+# Android / iOS builds
+*.apk
+*.aab
+*.ipa
+*.xcodeproj
+*.xcworkspace

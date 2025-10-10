@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ui:UXML xmlns:ui="UnityEngine.UIElements">
+    <ui:VisualElement style="position: absolute; left: 16px; bottom: 16px; width: 56px; height: 56px; z-index: 100;">
+        <ui:Button name="rollButton" class="roll-dice-button" style="width: 100%; height: 100%; padding: 0; background-color: transparent; border-radius: 8px;">
+            <ui:Image class="dice-image" style="width: 100%; height: 100%; object-fit: cover;" />
+        </ui:Button>
+    </ui:VisualElement>
+</ui:UXML>

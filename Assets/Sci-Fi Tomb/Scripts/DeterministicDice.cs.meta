@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: 15daac1de4eed174586154309d3855d7
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 255529
+  packageName: Dice and Tomb Board Game - Free
+  packageVersion: 1.0
+  assetPath: Assets/Sci-Fi Tomb/Scripts/DeterministicDice.cs
+  uploadId: 599463
