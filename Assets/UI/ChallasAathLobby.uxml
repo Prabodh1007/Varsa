@@ -1,0 +1,80 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <Style src="ChallasAathStyles.uss" />
+    <ui:VisualElement name="MainContainer" class="main-container">
+        <ui:VisualElement name="Header" class="header">
+            <ui:Label text="VARASA" name="AppTitle" class="app-title" />
+        </ui:VisualElement>
+        <ui:VisualElement name="LobbyPanel" class="panel lobby-panel">
+            <ui:VisualElement class="lobby-content">
+                <ui:Label text="CHALLS AATH" class="game-title" />
+                <ui:Label text="Re-discover the ancient strategy game." class="subtitle" />
+                <ui:VisualElement class="buttons-container">
+                    <ui:Button name="PlayFriendsBtn" text="PLAY WITH FRIENDS" class="main-btn heritage-red" />
+                    <ui:Button name="PlayRandomBtn" text="PLAY WITH RANDOM PEOPLE" class="main-btn heritage-red" />
+                </ui:VisualElement>
+            </ui:VisualElement>
+        </ui:VisualElement>
+        <ui:VisualElement name="FriendsMenuPanel" class="panel friends-panel hidden">
+            <ui:Button name="FriendsBackBtn" text="← Back" class="back-btn" />
+            <ui:Label text="START A CHALLENGE" class="panel-title" />
+            <ui:VisualElement class="friends-content">
+                <ui:Button name="CreateRoomBtn" text="CREATE PRIVATE ROOM" class="main-btn heritage-amber" />
+                <ui:VisualElement class="or-bubble">
+                    <ui:Label text="OR" class="or-bubble-text" />
+                </ui:VisualElement>
+                <ui:Button name="JoinRoomBtn" text="JOIN PRIVATE ROOM" class="main-btn heritage-red" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+        <ui:VisualElement name="JoinRoomPanel" class="panel join-panel hidden">
+            <ui:Button name="JoinBackBtn" text="← Back" class="back-btn" />
+            <ui:VisualElement class="join-content">
+                <ui:VisualElement class="input-card">
+                    <ui:Label text="Enter 6-Digit Room ID" class="input-label" />
+                    <ui:VisualElement class="input-container">
+                        <ui:TextField name="RoomInput" placeholder-text="e.g., C8H7K2" max-length="6" class="room-input" />
+                        <ui:Button name="GoBtn" text="GO" class="go-btn heritage-red" />
+                    </ui:VisualElement>
+                </ui:VisualElement>
+            </ui:VisualElement>
+        </ui:VisualElement>
+        <ui:VisualElement name="QuickMatchSearchPanel" class="panel search-panel hidden">
+            <ui:Button name="SearchBackBtn" text="← Back" class="back-btn" />
+            <ui:VisualElement class="search-content">
+                <ui:Label text="SEARCHING FOR MATCH..." class="search-title" />
+                <ui:Label text=". . ." name="SearchDots" class="search-dots" />
+                <ui:Label text="Connecting you with a random opponent." class="search-subtitle" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+        <ui:VisualElement name="RoomWaitingPanel" class="panel waiting-panel hidden">
+            <ui:Button name="WaitingBackBtn" text="← Back" class="back-btn" />
+            <ui:Label text="ROOM CREATED" name="RoomTitle" class="panel-title" />
+            <ui:VisualElement class="waiting-content">
+                <ui:VisualElement class="room-code-card">
+                    <ui:Label text="Room ID" class="code-label" />
+                    <ui:VisualElement class="code-container">
+                        <ui:Label text="ABC123" name="RoomCodeText" class="room-code-text" />
+                        <ui:Button name="CopyBtn" text="📋" class="copy-btn" />
+                    </ui:VisualElement>
+                </ui:VisualElement>
+                <ui:Label text="1/4 PLAYERS JOINED" name="PlayerCountText" class="player-count" />
+                
+                <ui:VisualElement class="player-avatars">
+                    <ui:VisualElement name="Player1Avatar" class="avatar avatar-ready">
+                        <ui:Label text="👤" class="avatar-icon" />
+                    </ui:VisualElement>
+                    <ui:VisualElement name="Player2Avatar" class="avatar avatar-waiting">
+                        <ui:Label text="?" class="avatar-icon" />
+                    </ui:VisualElement>
+                    <ui:VisualElement name="Player3Avatar" class="avatar avatar-waiting">
+                        <ui:Label text="?" class="avatar-icon" />
+                    </ui:VisualElement>
+                    <ui:VisualElement name="Player4Avatar" class="avatar avatar-waiting">
+                        <ui:Label text="?" class="avatar-icon" />
+                    </ui:VisualElement>
+                </ui:VisualElement>
+                <ui:Label text="Waiting for players..." name="StatusText" class="status-text" />
+                <ui:Button name="StartGameBtn" text="START GAME" class="main-btn heritage-red start-btn" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

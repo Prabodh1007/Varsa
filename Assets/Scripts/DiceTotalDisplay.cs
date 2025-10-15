@@ -19,7 +19,7 @@ public class DiceTotalDisplay : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        GetComponent<TextMeshProUGUI>().text = "= " + theDiceRoller.DiceTotal;
+        GetComponent<TextMeshProUGUI>().text = "" + theDiceRoller.DiceTotal;
         //if (theDiceRoller.doneRolling == true)
         //{
         //    // switched to TextMeshProUGUI

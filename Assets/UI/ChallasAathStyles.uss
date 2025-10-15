@@ -1,0 +1,417 @@
+/* ============ ROOT VARIABLES ============ */
+:root {
+    --heritage-red: rgb(123, 17, 19);
+    --heritage-amber: rgb(255, 195, 0);
+    --heritage-beige: rgb(253, 245, 230);
+    --amber-light: rgba(254, 240, 138, 0.7);
+    --stone-gray: rgb(245, 242, 237);
+    --white: rgb(255, 255, 255);
+    --gray: rgb(107, 114, 128);
+}
+
+/* ============ MAIN CONTAINER ============ */
+.main-container {
+    width: 100%;
+    height: 100%;
+    background-color: var(--stone-gray);
+    flex-direction: column;
+}
+
+/* ============ HEADER ============ */
+.header {
+    width: 100%;
+    height: 80px;
+    background-color: var(--amber-light);
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 24px;
+    padding-right: 24px;
+}
+
+.app-title {
+    font-size: 36px;
+    color: var(--heritage-red);
+    -unity-font-style: bold;
+    letter-spacing: 2px;
+}
+
+.settings-btn {
+    width: 48px;
+    height: 48px;
+    background-color: transparent;
+    border-width: 0;
+    border-radius: 24px;
+}
+
+.settings-btn:hover {
+    background-color: rgba(123, 17, 19, 0.1);
+}
+
+.settings-icon {
+    font-size: 24px;
+    color: var(--heritage-red);
+}
+
+/* ============ PANELS ============ */
+.panel {
+    width: 100%;
+    flex: 1;
+    background-color: var(--heritage-beige);
+    padding: 24px;
+    align-items: center;
+    justify-content: center;
+}
+
+.hidden {
+    display: none;
+}
+
+/* ============ LOBBY PANEL ============ */
+.lobby-content {
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.game-title {
+    font-size: 72px;
+    color: var(--heritage-red);
+    -unity-font-style: bold;
+    letter-spacing: 3px;
+    margin-bottom: 20px;
+    -unity-text-align: middle-center;
+}
+
+.subtitle {
+    font-size: 20px;
+    color: var(--gray);
+    -unity-text-align: middle-center;
+    margin-bottom: 40px;
+}
+
+.buttons-container {
+    align-items: center;
+    width: 100%;
+}
+
+/* ============ BUTTONS ============ */
+.main-btn {
+    width: 500px;
+    height: 80px;
+    border-radius: 12px;
+    font-size: 24px;
+    -unity-font-style: bold;
+    letter-spacing: 1px;
+    margin-top: 12px;
+    margin-bottom: 12px;
+    border-bottom-width: 4px;
+    color: var(--white);
+}
+
+.heritage-red {
+    background-color: var(--heritage-red);
+    border-bottom-color: rgb(100, 13, 15);
+}
+
+.heritage-red:hover {
+    background-color: rgb(100, 13, 15);
+}
+
+.heritage-red:active {
+    border-bottom-width: 0;
+    translate: 0 1px;
+}
+
+.heritage-amber {
+    background-color: var(--heritage-amber);
+    border-bottom-color: rgb(200, 150, 0);
+    color: var(--heritage-red);
+}
+
+.heritage-amber:hover {
+    background-color: rgb(230, 175, 0);
+}
+
+.back-btn {
+    position: absolute;
+    top: 24px;
+    left: 24px;
+    background-color: transparent;
+    border-width: 0;
+    font-size: 20px;
+    color: var(--heritage-red);
+    padding: 8px 16px;
+    border-radius: 8px;
+}
+
+.back-btn:hover {
+    background-color: rgba(123, 17, 19, 0.1);
+}
+
+/* ============ DIVIDERS ============ */
+.or-divider {
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 32px;
+    margin-bottom: 32px;
+    width: 100%;
+}
+
+.divider-line {
+    height: 2px;
+    width: 100px;
+    background-color: var(--heritage-amber);
+    border-radius: 1px;
+}
+
+.or-text {
+    font-size: 24px;
+    color: var(--heritage-amber);
+    -unity-font-style: bold;
+    margin-left: 16px;
+    margin-right: 16px;
+}
+
+.or-bubble {
+    width: 80px;
+    height: 40px;
+    background-color: var(--heritage-beige);
+    border-width: 2px;
+    border-color: var(--heritage-red);
+    border-radius: 20px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 24px;
+    margin-bottom: 24px;
+}
+
+.or-bubble-text {
+    font-size: 20px;
+    color: var(--heritage-red);
+    -unity-font-style: bold;
+}
+
+/* ============ PANEL TITLES ============ */
+.panel-title {
+    font-size: 42px;
+    color: var(--heritage-red);
+    -unity-font-style: bold;
+    -unity-text-align: middle-center;
+    margin-bottom: 40px;
+    margin-top: 40px;
+}
+
+/* ============ FRIENDS PANEL ============ */
+.friends-content {
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+    width: 100%;
+}
+
+/* ============ JOIN ROOM PANEL ============ */
+.join-content {
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+    width: 100%;
+}
+
+.input-card {
+    width: 600px;
+    height: 250px;
+    background-color: var(--heritage-amber);
+    border-radius: 12px;
+    border-width: 2px;
+    border-color: rgba(123, 17, 19, 0.3);
+    align-items: center;
+    justify-content: center;
+    padding: 32px;
+}
+
+.input-label {
+    font-size: 28px;
+    color: var(--heritage-red);
+    -unity-font-style: bold;
+    margin-bottom: 20px;
+    -unity-text-align: middle-center;
+}
+
+.input-container {
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+}
+
+.room-input {
+    flex: 1;
+    height: 60px;
+    background-color: var(--white);
+    border-radius: 8px;
+    border-width: 2px;
+    border-color: rgba(123, 17, 19, 0.5);
+    font-size: 24px;
+    -unity-text-align: middle-center;
+    color: var(--heritage-red);
+    -unity-font-style: bold;
+    letter-spacing: 2px;
+    margin-right: 8px;
+}
+
+.room-input:focus {
+    border-color: var(--heritage-amber);
+    border-width: 4px;
+}
+
+.go-btn {
+    width: 100px;
+    height: 60px;
+    font-size: 20px;
+    -unity-font-style: bold;
+}
+
+/* ============ SEARCH PANEL ============ */
+.search-content {
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+    width: 100%;
+}
+
+.search-title {
+    font-size: 48px;
+    color: var(--heritage-red);
+    -unity-font-style: bold;
+    -unity-text-align: middle-center;
+    margin-bottom: 20px;
+}
+
+.search-dots {
+    font-size: 72px;
+    color: var(--heritage-amber);
+    -unity-text-align: middle-center;
+    margin-bottom: 20px;
+}
+
+.search-subtitle {
+    font-size: 24px;
+    color: rgba(123, 17, 19, 0.8);
+    -unity-text-align: middle-center;
+}
+
+/* ============ WAITING PANEL ============ */
+.waiting-content {
+    flex-direction: column;
+    width: 100%;
+    flex: 1;
+    align-items: center;
+}
+
+.room-code-card {
+    width: 380px;
+    height: 160px;
+    background-color: var(--heritage-amber);
+    border-radius: 12px;
+    border-width: 4px;
+    border-color: rgba(255, 195, 0, 0.8);
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 40px;
+    padding: 24px;
+}
+
+.code-label {
+    font-size: 22px;
+    color: rgba(123, 17, 19, 0.8);
+    -unity-font-style: bold;
+    margin-bottom: 8px;
+    -unity-text-align: middle-center;
+}
+
+.code-container {
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.room-code-text {
+    font-size: 54px;
+    color: var(--heritage-red);
+    -unity-font-style: bold;
+    letter-spacing: 4px;
+    margin-right: 16px;
+}
+
+.copy-btn {
+    width: 44px;
+    height: 44px;
+    background-color: rgba(123, 17, 19, 0.1);
+    border-radius: 8px;
+    border-width: 0;
+    font-size: 16px;
+    color: var(--heritage-red);
+}
+
+.copy-btn:hover {
+    background-color: var(--heritage-red);
+    color: var(--heritage-amber);
+}
+
+.player-count {
+    font-size: 28px;
+    color: var(--heritage-red);
+    -unity-font-style: bold;
+    -unity-text-align: middle-center;
+    margin-bottom: 20px;
+}
+
+.player-avatars {
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.avatar {
+    width: 64px;
+    height: 64px;
+    border-radius: 32px;
+    border-width: 4px;
+    align-items: center;
+    justify-content: center;
+    margin-left: 16px;
+    margin-right: 16px;
+}
+
+.avatar-ready {
+    background-color: rgb(34, 197, 94);
+    border-color: var(--heritage-red);
+}
+
+.avatar-waiting {
+    background-color: rgb(156, 163, 175);
+    border-color: rgb(107, 114, 128);
+}
+
+.avatar-icon {
+    font-size: 32px;
+    color: var(--white);
+    -unity-font-style: bold;
+}
+
+.status-text {
+    font-size: 20px;
+    color: rgba(123, 17, 19, 0.6);
+    -unity-font-style: bold;
+    -unity-text-align: middle-center;
+    margin-bottom: 40px;
+}
+
+.start-btn {
+    font-size: 32px;
+    height: 90px;
+    width: 400px;
+}
