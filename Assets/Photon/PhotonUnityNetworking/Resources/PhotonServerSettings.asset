@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: PhotonServerSettings
   m_EditorClassIdentifier: PhotonUnityNetworking::Photon.Pun.ServerSettings
   AppSettings:
-    AppIdRealtime: 0f871be7-9df8-4b9a-ae40-edff73004415
+    AppIdRealtime: 62213b03-7902-45e2-ac7d-3c2e5e61d2b1
     AppIdFusion: 
     AppIdChat: 
     AppIdVoice: 
@@ -46,6 +46,12 @@ MonoBehaviour:
   - RPC_SendHome
   - StartGameForAllPlayers
   - AddScore
+  - RPC_AddToGharOccupyingPieces
+  - RPC_RemoveFromGharOccupyingPieces
+  - RPC_ReturnToStart
+  - RPC_SyncPosition
+  - RPC_ApplyAssignedColor
+  - RPC_RequestAssign
   DisableAutoOpenWizard: 1
   ShowSettings: 0
   DevRegionSetOnce: 1

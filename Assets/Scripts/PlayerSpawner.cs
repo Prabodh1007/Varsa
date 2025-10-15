@@ -47,6 +47,18 @@ public class PlayerSpawner : MonoBehaviourPunCallbacks
             GameObject spawned = PhotonNetwork.Instantiate(playerPrefabName, spawnPos, Quaternion.identity, 0, instData);
             if (spawned == null)
                 Debug.LogError("PlayerSpawner: PhotonNetwork.Instantiate returned null (check Resources and prefab name).");
+            else
+            {
+                var pv = spawned.GetComponent<Photon.Pun.PhotonView>();
+                if (pv != null)
+                {
+                    Debug.Log($"PlayerSpawner: Spawned prefab with PhotonView id={pv.ViewID}, ownerActorNr={(pv.Owner!=null?pv.Owner.ActorNumber:-1)}, isMine={pv.IsMine}");
+                }
+                else
+                {
+                    Debug.LogWarning("PlayerSpawner: Spawned prefab has no PhotonView component.");
+                }
+            }
         }
 
         hasSpawned = true;
