@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: ebd5cf8e358ced44e805bff9efe1fec9
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 255529
+  packageName: Dice and Tomb Board Game - Free
+  packageVersion: 1.0
+  assetPath: Assets/Sci-Fi Tomb/Prefabs/wall_tile_01.prefab
+  uploadId: 599463

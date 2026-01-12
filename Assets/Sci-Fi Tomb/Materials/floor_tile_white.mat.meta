@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: e4c59e5c01317834cba1b1ebb3cce3ff
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 255529
+  packageName: Dice and Tomb Board Game - Free
+  packageVersion: 1.0
+  assetPath: Assets/Sci-Fi Tomb/Materials/floor_tile_white.mat
+  uploadId: 599463

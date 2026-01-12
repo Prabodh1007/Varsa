@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: 78099debb8cb9254c996dadfae76d772
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 255529
+  packageName: Dice and Tomb Board Game - Free
+  packageVersion: 1.0
+  assetPath: Assets/Sci-Fi Tomb/Scripts/EmissionFlickerEffect.cs
+  uploadId: 599463
